@@ -1,7 +1,7 @@
 import { PhotoFormPage } from '../page-objects/photos/photo-form.po';
 import { PhotoListPage } from '../page-objects/photos/photo-list.po';
 import { PhotoDetailsPage } from '../page-objects/photos/photo-details.po';
-import { SigninPage } from '../page-objects/home/signin.po'
+import { SigninPage } from '../page-objects/signin.po'
 import { element, browser, by } from 'protractor';
 
 describe('Testando funcionalidade de fotos', () => {
