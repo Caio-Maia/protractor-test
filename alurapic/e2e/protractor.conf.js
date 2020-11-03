@@ -6,6 +6,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
     allScriptsTimeout: 11000,
+    seleniumAddress: 'http://IP/wd/hub',
     suites: {
         login: [
             './src/specs/signin.e2e-spec.ts'
@@ -22,7 +23,7 @@ exports.config = {
         shardTestFiles: false,
         maxInstances: 2
     },
-    directConnect: true,
+    directConnect: true, // Colocar como false caso queira usar SeleniumGRID
     baseUrl: 'http://localhost:4200/',
     framework: 'jasmine',
     jasmineNodeOpts: {
