@@ -14,10 +14,10 @@ export class PhotoFormPage {
     }
 
     comentarImagem(comentario) {
-        return element(by.formControlName('description')).sendKeys(comentario);
+        return expect(element(by.formControlName('description')).sendKeys(comentario));
     }
 
-    pegarBotaoUpload() {
-        return element(by.buttonText('Upload'));
+    clicarBotaoUpload() {
+        return expect(element(by.buttonText('Upload')).click());
     }
 }

@@ -1,6 +1,7 @@
-import { browser, element, by } from 'protractor';
+import { browser, element, by} from 'protractor';
+import { SimplePage } from '../shared/simplePage.po';
 
-export class SignUpPage {
+export class SignUpPage extends SimplePage{
 
     botao = element(by.xpath(`//button[@class='btn btn-primary btn-block']`));
     errorUser = element(by.xpath(`//small[contains(text(),'User name is required!')]`));
@@ -26,6 +27,7 @@ export class SignUpPage {
 
     retornarSpanError(erroName: string) {
         const spanError = element(by.xpath(`//small[contains(text(),'${erroName}')]`));
+        this.esperarElemento(spanError);
         return spanError.isDisplayed();
     }
 
@@ -44,4 +46,9 @@ export class SignUpPage {
     registerMissFullName() {
         return this.errorFullName;
     }
+
+    esperarElementoAparecer(erroName) {
+        expect(element(by.xpath(`//small[contains(text(),'${erroName}')]`)).isDisplayed()).toBe(true);
+    }
+
 }

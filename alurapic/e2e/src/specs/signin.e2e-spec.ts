@@ -1,6 +1,6 @@
 import { browser } from 'protractor';
 import { SigninPage } from '../page-objects/signin.po';
-import { Utils } from '../utils/utils';
+import { Utils } from '../shared/utils';
 
 describe('Testando tela de Login', () => {
     
@@ -16,12 +16,12 @@ describe('Testando tela de Login', () => {
         util = new Utils();
     });
 
-    it('Deve navegar para o Login', () => {
-        signinPage.acessarLogin();
+    it('Deve navegar para o Login', async () => {
+        await signinPage.acessarLogin();
     });
 
-    it('Deve verificar a Url', () => {
-        util.assertEquals('http://localhost:4200/#/home', signinPage.verificarUrl());
+    it('Deve verificar a Url', async () => {
+        await util.assertEquals('http://localhost:4200/#/home', signinPage.verificarUrl());
     });
 
     it('Deve mostrar User Name is required!', async () => {
@@ -43,12 +43,6 @@ describe('Testando tela de Login', () => {
             signinPage.pegarInput(usuario.nome, usuario.valor);
         });
         await signinPage.clicarBotaoLogin();
-        browser.sleep(500);
         await util.assertEquals(loginUsuario[0].valor, await signinPage.logado());
     });
-/*
-    it('Verificar que Usuario está Logado', async () => {
-        console.log(await signinPage.logado());
-        await expect(signinPage.logado()).toEqual(loginUsuario[0].valor);
-    }); */
 })

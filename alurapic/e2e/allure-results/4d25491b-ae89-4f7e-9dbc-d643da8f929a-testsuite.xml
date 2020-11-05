@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604581866540' stop='1604581868040'>
+    <name>Testando tela de Login</name>
+    <title>Testando tela de Login</title>
+    <test-cases>
+        <test-case start='1604581866540' status='passed' stop='1604581867049'>
+            <name>Deve navegar para o Login</name>
+            <title>Deve navegar para o Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604581867049' status='passed' stop='1604581867070'>
+            <name>Deve verificar a Url</name>
+            <title>Deve verificar a Url</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604581867070' status='passed' stop='1604581867147'>
+            <name>Deve mostrar User Name is required!</name>
+            <title>Deve mostrar User Name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604581867147' status='passed' stop='1604581867517'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604581867517' status='passed' stop='1604581868040'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

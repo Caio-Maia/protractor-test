@@ -1,6 +1,7 @@
-import { browser, element, by } from 'protractor';
+import { browser, element, by, protractor } from 'protractor';
+import { SimplePage } from '../shared/simplePage.po';
 
-export class SigninPage {
+export class SigninPage extends SimplePage {
 
     botao = element(by.buttonText('login'));
     userName = element(by.xpath(`//a[@class='mr-1']`));
@@ -19,8 +20,8 @@ export class SigninPage {
         expect(element(by.formControlName(formControlName)).sendKeys(valor));
     }
 
-    clearInput(formControlName) {
-        return element(by.formControlName(formControlName)).clear();
+    clearInput(xpath) {
+        return element(by.xpath(xpath)).clear();
     }
 
     clicarBotaoLogin() {
@@ -33,6 +34,7 @@ export class SigninPage {
     }
 
     async logado() {
+        this.esperarElemento(this.userName);
         let nomeLogado = await this.userName.getText();
         return nomeLogado;
     }

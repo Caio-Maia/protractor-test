@@ -3,14 +3,20 @@ import { PhotoListPage } from '../page-objects/photos/photo-list.po';
 import { PhotoDetailsPage } from '../page-objects/photos/photo-details.po';
 import { SigninPage } from '../page-objects/signin.po'
 import { element, browser, by } from 'protractor';
+import { Utils } from '../shared/utils';
 
 describe('Testando funcionalidade de fotos', () => {
-/*
+
     let signinPage: SigninPage;
     let photoFormPage: PhotoFormPage;
     let photoListPage: PhotoListPage;
     let photoDetailsPage: PhotoDetailsPage;
     let comentario = 'Foto bonita';
+    let util: Utils;
+    let loginUsuario = [
+        { nome: 'userName', valor: 'testbom' },
+        { nome: 'password', valor: '123456789' }
+    ]
 
     beforeEach(() => {
         
@@ -18,41 +24,44 @@ describe('Testando funcionalidade de fotos', () => {
         photoFormPage = new PhotoFormPage();
         photoListPage = new PhotoListPage();
         photoDetailsPage = new PhotoDetailsPage();
+        util = new Utils();
     });
 
-    it('Deve fazer login', () => {
-        signinPage.acessarHome();
-        expect(signinPage.pegarInput('userName', 'flavio'));
-        expect(signinPage.pegarInput('password', '123'));
-        expect(signinPage.pegarBotaoLogin());
+    it('Deve fazer login', async () => {
+        await signinPage.acessarLogin();
+        loginUsuario.forEach(usuario => {
+            signinPage.pegarInput(usuario.nome, usuario.valor);
+        });
+        await signinPage.clicarBotaoLogin();
+        await util.assertEquals(loginUsuario[0].valor, await signinPage.logado());
     });
 
     it('Deve navegar para /p/add', () => {
         photoFormPage.navegarParaPhotoForm();
     });
 
-    it('Deve cadastrar imagem', () => {
+    it('Deve cadastrar imagem', async () => {
         photoFormPage.carregarImagem();
-        photoFormPage.comentarImagem(comentario);
-        photoFormPage.pegarBotaoUpload().click();
+        await photoFormPage.comentarImagem(comentario);
+        await photoFormPage.clicarBotaoUpload();
     });
 
-    it('Busca de imagem', () => {
-        photoListPage.navegarParaPhotoList();
-        photoListPage.buscarImagem(comentario);
+    it('Busca de imagem', async () => {
+        await photoListPage.navegarParaPhotoList();
+        await photoListPage.buscarImagem(comentario);
         photoListPage.pegarImagem();
     });
 
-    it('Deve navegar para a foto', () => {
-        photoDetailsPage.navegarParaDetails();
+    it('Deve navegar para a foto', async () => {
+        await photoDetailsPage.navegarParaDetails();
     });
 
     it('Deve fazer um comentario', async () => {
-        await browser.executeScript('arguments[0].scrollIntoView(true);', photoDetailsPage.pegarBotaoComentar().getWebElement());
-        photoDetailsPage.escreverComentario();
-        photoDetailsPage.pegarBotaoComentar().click();
+        await browser.executeScript('arguments[0].scrollIntoView(true);', photoDetailsPage.pegarBotaoComentar());
+        await photoDetailsPage.escreverComentario();
+        photoDetailsPage.clicarBotaoComentar();
     });
-*/
+
     /*it('Deve excluir uma foto', () => {
         photoDetailsPage.pegarBotaoExcluirPhoto().click();
     });*/

@@ -6,7 +6,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
     allScriptsTimeout: 11000,
-    seleniumAddress: 'http://IP/wd/hub',
+    seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
     suites: {
         login: [
             './src/specs/signin.e2e-spec.ts'
@@ -15,7 +15,7 @@ exports.config = {
             './src/specs/signup.e2e-spec.ts'
         ],
         photo: [
-            './scr/specs/photo.e2e-spec.ts'
+            './src/specs/photo.e2e-spec.ts'
         ]
     },
     capabilities: {
@@ -23,7 +23,7 @@ exports.config = {
         shardTestFiles: false,
         maxInstances: 2
     },
-    directConnect: true, // Colocar como false caso queira usar SeleniumGRID
+    directConnect: false, // Colocar como false caso queira usar SeleniumGRID
     baseUrl: 'http://localhost:4200/',
     framework: 'jasmine',
     jasmineNodeOpts: {

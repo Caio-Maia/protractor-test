@@ -10,11 +10,15 @@ export class PhotoDetailsPage {
         return element(by.formControlName('comment')).sendKeys('comentario');
     }
 
-    pegarBotaoComentar() {
-        return element(by.partialButtonText('Publish'));
+    clicarBotaoComentar() {
+        return expect(element(by.partialButtonText('Publish')).click());
     }
 
-    pegarBotaoExcluirPhoto() {
-        return element(by.css('.fa-trash-o'));
+    pegarBotaoComentar() {
+        return expect(element(by.partialButtonText('Publish')).getWebElement());
+    }
+
+    clicarBotaoExcluirPhoto() {
+        return expect(element(by.css('.fa-trash-o')).click());
     }
 }
