@@ -1,0 +1,74 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604679661701' stop='1604679663152'>
+    <name>Testando funcionalidade de fotos</name>
+    <title>Testando funcionalidade de fotos</title>
+    <test-cases>
+        <test-case start='1604679661701' status='passed' stop='1604679662515'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604679662515' status='passed' stop='1604679662909'>
+            <name>Busca de imagem</name>
+            <title>Busca de imagem</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604679662909' status='passed' stop='1604679662926'>
+            <name>Deve navegar para a foto</name>
+            <title>Deve navegar para a foto</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604679662926' status='failed' stop='1604679663152'>
+            <name>Deve fazer um comentario</name>
+            <title>Deve fazer um comentario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: Cannot read property 'bind' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'bind' of undefined
+                    at ProtractorExpectedConditions.presenceOf (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/expectedConditions.js:341:40)
+                    at PhotoDetailsPage.SimplePage.esperarElemento (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/simplePage.po.ts:6:28)
+                    at PhotoDetailsPage.pegarBotaoComentar (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-details.po.ts:25:14)
+                    at PhotoDetailsPage.clicarBotaoComentar (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-details.po.ts:18:74)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:61:32)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:13:53)
+                    at fulfilled (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:4:58)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: Run it("Deve fazer um comentario") in control flow
+                    at UserContext.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:59:5)
+                    at addSpecsToSuite (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:8:1)
+                    at Module._compile (node:internal/modules/cjs/loader:1083:30)
+                    at Module.m._compile (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/node_modules/ts-node/src/index.ts:400:23)
+                    at Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/node_modules/ts-node/src/index.ts:403:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

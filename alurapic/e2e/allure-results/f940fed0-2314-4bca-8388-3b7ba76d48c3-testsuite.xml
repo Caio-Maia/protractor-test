@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604622399521' stop='1604622404493'>
+    <name>Testando tela de Registro</name>
+    <title>Testando tela de Registro</title>
+    <test-cases>
+        <test-case start='1604622399521' status='passed' stop='1604622400069'>
+            <name>Deve navegar para Signup</name>
+            <title>Deve navegar para Signup</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622400069' status='passed' stop='1604622400090'>
+            <name>Deve verificar a Url</name>
+            <title>Deve verificar a Url</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622400090' status='passed' stop='1604622400566'>
+            <name>Deve mostrar Email is required!</name>
+            <title>Deve mostrar Email is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622400566' status='passed' stop='1604622401004'>
+            <name>Deve mostrar Full name is required!</name>
+            <title>Deve mostrar Full name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622401004' status='passed' stop='1604622401430'>
+            <name>Deve mostrar User name is required!</name>
+            <title>Deve mostrar User name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622401430' status='passed' stop='1604622401883'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622401883' status='passed' stop='1604622402305'>
+            <name>Deve mostrar Invalid e-mail</name>
+            <title>Deve mostrar Invalid e-mail</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622402305' status='passed' stop='1604622403034'>
+            <name>Deve mostrar Username already taken</name>
+            <title>Deve mostrar Username already taken</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622403034' status='passed' stop='1604622403633'>
+            <name>Deve cadastrar usuario</name>
+            <title>Deve cadastrar usuario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622403633' status='passed' stop='1604622404492'>
+            <name>Deve verificar se o usuario está cadastrado</name>
+            <title>Deve verificar se o usuario está cadastrado</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

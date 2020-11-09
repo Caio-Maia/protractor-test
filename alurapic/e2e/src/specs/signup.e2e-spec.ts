@@ -1,84 +1,68 @@
+import { browser } from 'protractor';
+import { Usuarios } from '../obj/usuarios';
 import { SignUpPage } from '../page-objects/signup.po';
 import { Utils } from '../shared/utils';
 
 describe('Testando tela de Registro', () => {
 
-    let signupPage: SignUpPage;
-    let util: Utils;
-    let informacoesUsuario = [
-        { nome: 'email', valor: 'testebom@teste.com' },
-        { nome: 'fullName', valor: 'Test testado' },
-        { nome: 'userName', valor: 'testbom' },
-        { nome: 'password', valor: '123456789' }
-    ]
+    const signupPage: SignUpPage = new SignUpPage();
+    const util: Utils = new Utils();
+    const usuario: Usuarios = new Usuarios('', '', '', '');
+    const dummieUser: Usuarios = new Usuarios('testfaakkee', '123456789', 'testefaakkee@teste.com', 'Test testado');
 
-    beforeEach(() => {
-        signupPage = new SignUpPage();
-        util = new Utils();
+    beforeEach(async () => {
+        await signupPage.navegarParaSignup();
     });
 
     it('Deve navegar para Signup', async () => {
-        await signupPage.navegarParaSignup();
-    });
-
-    it('Deve verificar a Url', async () => {
         await util.assertEquals('http://localhost:4200/#/home/signup', signupPage.verificarUrl());
+        await util.assertToContain(signupPage.tituloSignup(), 'Register');
     });
 
     it('Deve mostrar Email is required!', async () => {
-        await signupPage.navegarParaSignup();
         await signupPage.clicarBotaoRegister();
         await util.assertTrue(signupPage.retornarSpanError('Email is required!'));
     });
 
     it('Deve mostrar Full name is required!', async () => {
-        await signupPage.navegarParaSignup();
-        await signupPage.registrarUsuario('fullName', '');
-        await signupPage.clicarBotaoRegister();
+        await signupPage.registrarNovoUsuario(usuario);
+        browser.sleep(10000);
         await util.assertTrue(signupPage.retornarSpanError('Full name is required!'));
     });
 
     it('Deve mostrar User name is required!', async () => {
-        await signupPage.navegarParaSignup();
-        await signupPage.registrarUsuario('userName', '');
+        await signupPage.registrarNovoUsuario(usuario);
         await signupPage.clicarBotaoRegister();
         await util.assertTrue(signupPage.retornarSpanError('User name is required!'));
     });
 
     it('Deve mostrar Password is required!', async () => {
-        await signupPage.navegarParaSignup();
-        await signupPage.registrarUsuario('password', '');
+        await signupPage.registrarNovoUsuario(usuario);
         await signupPage.clicarBotaoRegister();
         await util.assertTrue(signupPage.retornarSpanError('Password is required!'));
     });
 
     it('Deve mostrar Invalid e-mail', async () => {
-        await signupPage.navegarParaSignup();
         await signupPage.registrarUsuario('email', 'test@tes.');
         await signupPage.clicarBotaoRegister();
         await util.assertTrue(signupPage.retornarSpanError('Invalid e-mail'));
     });
 
     it('Deve mostrar Username already taken', async () => {
-        await signupPage.navegarParaSignup();
         await signupPage.registrarUsuario('userName', 'test');
         await signupPage.clicarBotaoRegister();
         await util.assertTrue(signupPage.retornarSpanError('Username already taken'));
     });
 
     it('Deve cadastrar usuario', async () => {
-        await signupPage.navegarParaSignup();
-        await informacoesUsuario.forEach(usuario => {
-            signupPage.registrarUsuario(usuario.nome, usuario.valor);
-        });
+        await signupPage.registrarNovoUsuario(dummieUser);
         await signupPage.clicarBotaoRegister();
+        signupPage.esperarElemento(signupPage.login);
+        await util.assertEquals('http://localhost:4200/#/home', signupPage.verificarUrl());
     });
 
     it('Deve verificar se o usuario está cadastrado', async () => {
-        await signupPage.navegarParaSignup();
-        await informacoesUsuario.forEach(usuario => {
-            signupPage.registrarUsuario(usuario.nome, usuario.valor);
-        });
+        await signupPage.registrarNovoUsuario(dummieUser);
         await util.assertTrue(signupPage.retornarSpanError('Username already taken')); // Ele testa vendo se o usuario ja existe
     });
 

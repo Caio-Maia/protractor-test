@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604623399919' stop='1604623401127'>
+    <name>Testando funcionalidade de fotos</name>
+    <title>Testando funcionalidade de fotos</title>
+    <test-cases>
+        <test-case start='1604623399919' status='passed' stop='1604623400609'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623400609' status='passed' stop='1604623400826'>
+            <name>Deve navegar para /p/add</name>
+            <title>Deve navegar para /p/add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623400827' status='passed' stop='1604623400981'>
+            <name>Deve cadastrar imagem</name>
+            <title>Deve cadastrar imagem</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623400981' status='passed' stop='1604623401101'>
+            <name>Busca de imagem</name>
+            <title>Busca de imagem</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623401101' status='passed' stop='1604623401116'>
+            <name>Deve navegar para a foto</name>
+            <title>Deve navegar para a foto</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623401116' status='failed' stop='1604623401127'>
+            <name>Deve fazer um comentario</name>
+            <title>Deve fazer um comentario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: expect called with WebElement argument, expected a Promise. Did you mean to use .getText()?</message>
+                <stack-trace>Error: expect called with WebElement argument, expected a Promise. Did you mean to use .getText()?
+                    at global.expect (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:244:11)
+                    at PhotoDetailsPage.pegarBotaoComentar (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-details.po.ts:18:16)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:60:92)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:13:53)
+                    at /home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:3:12)
+                    at UserContext.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:59:36)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

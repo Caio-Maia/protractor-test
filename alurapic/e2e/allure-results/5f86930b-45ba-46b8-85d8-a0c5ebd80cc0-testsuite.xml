@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604622355259' stop='1604622357902'>
+    <name>Testando tela de Login</name>
+    <title>Testando tela de Login</title>
+    <test-cases>
+        <test-case start='1604622355260' status='passed' stop='1604622356141'>
+            <name>Deve navegar para o Login</name>
+            <title>Deve navegar para o Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622356141' status='passed' stop='1604622356169'>
+            <name>Deve verificar a Url</name>
+            <title>Deve verificar a Url</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622356169' status='passed' stop='1604622356230'>
+            <name>Deve mostrar User Name is required!</name>
+            <title>Deve mostrar User Name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622356230' status='passed' stop='1604622357027'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604622357027' status='failed' stop='1604622357901'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>UnexpectedAlertOpenError: Dismissed user prompt dialog: Invalid user name or password</message>
+                <stack-trace>UnexpectedAlertOpenError: Dismissed user prompt dialog: Invalid user name or password
+                    at Object.throwDecodedError (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:514:15)
+                    at parseHttpResponse (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:519:13)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: WebDriver.findElements(By(xpath, //a[@class='mr-1']))
+                    at Driver.schedule (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+                    at Driver.findElements (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:1048:19)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/element.js:159:44
+                    at ManagedPromise.invokeCallback_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                From: Task: &lt;anonymous>
+                    at Timeout.pollCondition [as _onTimeout] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2195:19)
+                    at listOnTimeout (node:internal/timers:555:17)
+                    at processTimers (node:internal/timers:498:7)
+                From: Task: O elemento está demorando demais para aparecer no DOM
+                    at scheduleWait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+                    at ControlFlow.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+                    at Driver.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+                    at run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as wait] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:66:16)
+                    at SigninPage.SimplePage.esperarElemento (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/simplePage.po.ts:6:17)
+                    at SigninPage.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/signin.po.ts:37:14)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/signin.po.ts:42:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/signin.po.ts:23:53)
+                    at /home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/signin.po.ts:17:71</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

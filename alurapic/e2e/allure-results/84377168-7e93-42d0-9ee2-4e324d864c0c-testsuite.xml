@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604945937922' stop='1604945940798'>
+    <name>Testando tela de Login</name>
+    <title>Testando tela de Login</title>
+    <test-cases>
+        <test-case start='1604945937922' status='failed' stop='1604945939202'>
+            <name>Deve navegar para o Login</name>
+            <title>Deve navegar para o Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 'http://localhost:4200/#/home' to equal 'http://localhost:4200/#/home/'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Utils.assertEquals (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/utils.ts:10:30)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signin.e2e-spec.ts:20:20)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signin.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signin.e2e-spec.ts:13:53)
+                    at fulfilled (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signin.e2e-spec.ts:4:58)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604945939202' status='passed' stop='1604945939719'>
+            <name>Deve mostrar User Name is required!</name>
+            <title>Deve mostrar User Name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604945939719' status='passed' stop='1604945940166'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604945940166' status='passed' stop='1604945940797'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

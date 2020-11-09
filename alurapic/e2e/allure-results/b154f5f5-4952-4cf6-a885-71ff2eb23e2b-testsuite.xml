@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604924215970' stop='1604924216489'>
+    <name>Testando tela de Registro</name>
+    <title>Testando tela de Registro</title>
+    <test-cases>
+        <test-case start='1604924215971' status='passed' stop='1604924216487'>
+            <name>Deve navegar para Signup</name>
+            <title>Deve navegar para Signup</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604924216487' status='pending' stop='1604924216487'>
+            <name>Deve mostrar Email is required!</name>
+            <title>Deve mostrar Email is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216487' status='pending' stop='1604924216487'>
+            <name>Deve mostrar Full name is required!</name>
+            <title>Deve mostrar Full name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216487' status='pending' stop='1604924216487'>
+            <name>Deve mostrar User name is required!</name>
+            <title>Deve mostrar User name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216487' status='pending' stop='1604924216487'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216487' status='pending' stop='1604924216487'>
+            <name>Deve mostrar Invalid e-mail</name>
+            <title>Deve mostrar Invalid e-mail</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216487' status='pending' stop='1604924216487'>
+            <name>Deve mostrar Username already taken</name>
+            <title>Deve mostrar Username already taken</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216488' status='pending' stop='1604924216488'>
+            <name>Deve cadastrar usuario</name>
+            <title>Deve cadastrar usuario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604924216488' status='pending' stop='1604924216488'>
+            <name>Deve verificar se o usuario está cadastrado</name>
+            <title>Deve verificar se o usuario está cadastrado</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -14,8 +14,8 @@ describe('Testando funcionalidade de fotos', () => {
     let comentario = 'Foto bonita';
     let util: Utils;
     let loginUsuario = [
-        { nome: 'userName', valor: 'testbom' },
-        { nome: 'password', valor: '123456789' }
+        { nome: 'userName', valor: 'flavio' },
+        { nome: 'password', valor: '123' }
     ]
 
     beforeEach(() => {
@@ -35,19 +35,19 @@ describe('Testando funcionalidade de fotos', () => {
         await signinPage.clicarBotaoLogin();
         await util.assertEquals(loginUsuario[0].valor, await signinPage.logado());
     });
-
-    it('Deve navegar para /p/add', () => {
-        photoFormPage.navegarParaPhotoForm();
+/*
+    it('Deve navegar para /p/add', async () => {
+        await photoFormPage.navegarParaPhotoForm();
     });
 
     it('Deve cadastrar imagem', async () => {
         photoFormPage.carregarImagem();
         await photoFormPage.comentarImagem(comentario);
         await photoFormPage.clicarBotaoUpload();
-    });
+    }); */
 
     it('Busca de imagem', async () => {
-        await photoListPage.navegarParaPhotoList();
+        await photoListPage.navegarParaPhotoList(loginUsuario[0].valor);
         await photoListPage.buscarImagem(comentario);
         photoListPage.pegarImagem();
     });
@@ -57,9 +57,8 @@ describe('Testando funcionalidade de fotos', () => {
     });
 
     it('Deve fazer um comentario', async () => {
-        await browser.executeScript('arguments[0].scrollIntoView(true);', photoDetailsPage.pegarBotaoComentar());
         await photoDetailsPage.escreverComentario();
-        photoDetailsPage.clicarBotaoComentar();
+        await photoDetailsPage.clicarBotaoComentar();
     });
 
     /*it('Deve excluir uma foto', () => {

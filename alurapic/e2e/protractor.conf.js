@@ -23,7 +23,7 @@ exports.config = {
         shardTestFiles: false,
         maxInstances: 2
     },
-    directConnect: false, // Colocar como false caso queira usar SeleniumGRID
+    directConnect: true, // Colocar como false caso queira usar SeleniumGRID
     baseUrl: 'http://localhost:4200/',
     framework: 'jasmine',
     jasmineNodeOpts: {

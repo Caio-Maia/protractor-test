@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604927565617' stop='1604927584181'>
+    <name>Testando tela de Registro</name>
+    <title>Testando tela de Registro</title>
+    <test-cases>
+        <test-case start='1604927565617' status='passed' stop='1604927566290'>
+            <name>Deve navegar para Signup</name>
+            <title>Deve navegar para Signup</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927566290' status='passed' stop='1604927567453'>
+            <name>Deve mostrar Email is required!</name>
+            <title>Deve mostrar Email is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927567453' status='passed' stop='1604927577879'>
+            <name>Deve mostrar Full name is required!</name>
+            <title>Deve mostrar Full name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927577879' status='passed' stop='1604927579142'>
+            <name>Deve mostrar User name is required!</name>
+            <title>Deve mostrar User name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927579142' status='passed' stop='1604927580259'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927580259' status='passed' stop='1604927581330'>
+            <name>Deve mostrar Invalid e-mail</name>
+            <title>Deve mostrar Invalid e-mail</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927581330' status='passed' stop='1604927582421'>
+            <name>Deve mostrar Username already taken</name>
+            <title>Deve mostrar Username already taken</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927582421' status='failed' stop='1604927583598'>
+            <name>Deve cadastrar usuario</name>
+            <title>Deve cadastrar usuario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected 'http://localhost:4200/#/home/signup' to equal 'http://localhost:4200/#/home'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Utils.assertEquals (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/utils.ts:10:30)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:71:20)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:13:53)
+                    at fulfilled (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:4:58)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927583598' status='passed' stop='1604927584178'>
+            <name>Deve verificar se o usuario está cadastrado</name>
+            <title>Deve verificar se o usuario está cadastrado</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

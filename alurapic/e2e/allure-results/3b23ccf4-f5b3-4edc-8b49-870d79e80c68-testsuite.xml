@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604623798032' stop='1604623800471'>
+    <name>Testando funcionalidade de fotos</name>
+    <title>Testando funcionalidade de fotos</title>
+    <test-cases>
+        <test-case start='1604623798032' status='passed' stop='1604623798917'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623798917' status='passed' stop='1604623799278'>
+            <name>Busca de imagem</name>
+            <title>Busca de imagem</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623799278' status='passed' stop='1604623799297'>
+            <name>Deve navegar para a foto</name>
+            <title>Deve navegar para a foto</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604623799297' status='passed' stop='1604623800470'>
+            <name>Deve fazer um comentario</name>
+            <title>Deve fazer um comentario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

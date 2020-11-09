@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604927127429' stop='1604927133395'>
+    <name>Testando tela de Registro</name>
+    <title>Testando tela de Registro</title>
+    <test-cases>
+        <test-case start='1604927127429' status='passed' stop='1604927128024'>
+            <name>Deve navegar para Signup</name>
+            <title>Deve navegar para Signup</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604927128024' status='failed' stop='1604927133392'>
+            <name>Deve cadastrar usuario</name>
+            <title>Deve cadastrar usuario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: O elemento está demorando demais para aparecer no DOM
+                Wait timed out after 5003ms</message>
+                <stack-trace>TimeoutError: O elemento está demorando demais para aparecer no DOM
+                Wait timed out after 5003ms
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+                    at ManagedPromise.invokeCallback_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: O elemento está demorando demais para aparecer no DOM
+                    at scheduleWait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+                    at ControlFlow.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+                    at Driver.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+                    at run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as wait] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:66:16)
+                    at SignUpPage.SimplePage.esperarElemento (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/simplePage.po.ts:6:17)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:71:20)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:13:53)
+                    at fulfilled (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/signup.e2e-spec.ts:4:58)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133392' status='pending' stop='1604927133392'>
+            <name>Deve mostrar Email is required!</name>
+            <title>Deve mostrar Email is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133392' status='pending' stop='1604927133392'>
+            <name>Deve mostrar Full name is required!</name>
+            <title>Deve mostrar Full name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133392' status='pending' stop='1604927133392'>
+            <name>Deve mostrar User name is required!</name>
+            <title>Deve mostrar User name is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133392' status='pending' stop='1604927133392'>
+            <name>Deve mostrar Password is required!</name>
+            <title>Deve mostrar Password is required!</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133392' status='pending' stop='1604927133393'>
+            <name>Deve mostrar Invalid e-mail</name>
+            <title>Deve mostrar Invalid e-mail</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133393' status='pending' stop='1604927133393'>
+            <name>Deve mostrar Username already taken</name>
+            <title>Deve mostrar Username already taken</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604927133393' status='pending' stop='1604927133393'>
+            <name>Deve verificar se o usuario está cadastrado</name>
+            <title>Deve verificar se o usuario está cadastrado</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

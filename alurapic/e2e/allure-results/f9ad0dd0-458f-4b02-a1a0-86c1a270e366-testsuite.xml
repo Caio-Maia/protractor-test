@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604624321304' stop='1604624322407'>
+    <name>Testando funcionalidade de fotos</name>
+    <title>Testando funcionalidade de fotos</title>
+    <test-cases>
+        <test-case start='1604624321304' status='passed' stop='1604624322020'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604624322020' status='passed' stop='1604624322385'>
+            <name>Busca de imagem</name>
+            <title>Busca de imagem</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604624322385' status='passed' stop='1604624322398'>
+            <name>Deve navegar para a foto</name>
+            <title>Deve navegar para a foto</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604624322398' status='failed' stop='1604624322407'>
+            <name>Deve fazer um comentario</name>
+            <title>Deve fazer um comentario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read property 'bind' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'bind' of undefined
+                    at ProtractorExpectedConditions.presenceOf (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/expectedConditions.js:341:40)
+                    at PhotoDetailsPage.SimplePage.esperarElemento (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/simplePage.po.ts:6:28)
+                    at PhotoDetailsPage.pegarBotaoComentar (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-details.po.ts:23:14)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:60:92)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:13:53)
+                    at /home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:3:12)
+                    at UserContext.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:59:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

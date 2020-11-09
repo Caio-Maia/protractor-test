@@ -1,0 +1,163 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1604666627331' stop='1604666633503'>
+    <name>Testando funcionalidade de fotos</name>
+    <title>Testando funcionalidade de fotos</title>
+    <test-cases>
+        <test-case start='1604666627331' status='passed' stop='1604666628123'>
+            <name>Deve fazer login</name>
+            <title>Deve fazer login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604666628123' status='failed' stop='1604666628434'>
+            <name>Busca de imagem</name>
+            <title>Busca de imagem</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression 1 because of the following error:
+                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+                  (Session info: chrome=86.0.4240.183)
+                  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Linux 5.4.0-52-generic x86_64)</message>
+                <stack-trace>InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression 1 because of the following error:
+                TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+                  (Session info: chrome=86.0.4240.183)
+                  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Linux 5.4.0-52-generic x86_64)
+                    at Object.checkLegacyResponse (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
+                    at parseHttpResponse (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: WebDriver.findElements(By(xpath, 1))
+                    at Driver.schedule (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+                    at Driver.findElements (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:1048:19)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/element.js:159:44
+                    at ManagedPromise.invokeCallback_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)Error
+                    at ElementArrayFinder.applyAction_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.&lt;computed> [as sendKeys] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.&lt;computed> [as sendKeys] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/element.js:831:22)
+                    at PhotoListPage.buscarImagem (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-list.po.ts:11:47)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:51:29)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:13:53)
+                    at fulfilled (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:4:58)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: Run it("Busca de imagem") in control flow
+                    at UserContext.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:49:5)
+                    at addSpecsToSuite (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:8:1)
+                    at Module._compile (node:internal/modules/cjs/loader:1083:30)
+                    at Module.m._compile (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/node_modules/ts-node/src/index.ts:400:23)
+                    at Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/node_modules/ts-node/src/index.ts:403:12)
+                From: Task: &lt;anonymous>
+                    at pollCondition (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2195:19)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2191:7
+                    at new ManagedPromise (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2190:22
+                    at TaskQueue.execute_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: O elemento está demorando demais para aparecer no DOM
+                    at scheduleWait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+                    at ControlFlow.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+                    at Driver.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+                    at run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as wait] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:66:16)
+                    at PhotoListPage.SimplePage.esperarElemento (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/simplePage.po.ts:6:17)
+                    at PhotoListPage.buscarImagem (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-list.po.ts:12:14)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:51:29)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:13:53)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1604666628434' status='passed' stop='1604666628485'>
+            <name>Deve navegar para a foto</name>
+            <title>Deve navegar para a foto</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1604666628485' status='failed' stop='1604666633501'>
+            <name>Deve fazer um comentario</name>
+            <title>Deve fazer um comentario</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: O elemento está demorando demais para aparecer no DOM
+                Wait timed out after 5007ms</message>
+                <stack-trace>TimeoutError: O elemento está demorando demais para aparecer no DOM
+                Wait timed out after 5007ms
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2201:17
+                    at ManagedPromise.invokeCallback_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at runMicrotasks (&lt;anonymous>)
+                    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+                From: Task: O elemento está demorando demais para aparecer no DOM
+                    at scheduleWait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+                    at ControlFlow.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+                    at Driver.wait (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+                    at run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:58:33)
+                    at ProtractorBrowser.to.&lt;computed> [as wait] (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/built/browser.js:66:16)
+                    at PhotoDetailsPage.SimplePage.esperarElemento (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/shared/simplePage.po.ts:6:17)
+                    at PhotoDetailsPage.escreverComentario (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/page-objects/photos/photo-details.po.ts:12:14)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:60:32)
+                    at step (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:32:23)
+                    at Object.next (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:13:53)
+                From: Task: Run it("Deve fazer um comentario") in control flow
+                    at UserContext.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48
+                    at ControlFlow.emit (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)
+                    at ControlFlow.shutdown_ (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)
+                    at /home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:59:5)
+                    at addSpecsToSuite (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/home/local/CONDUCTOR/caio.maia/.nvm/versions/node/v15.0.1/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/e2e/src/specs/photo.e2e-spec.ts:8:1)
+                    at Module._compile (node:internal/modules/cjs/loader:1083:30)
+                    at Module.m._compile (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/node_modules/ts-node/src/index.ts:400:23)
+                    at Module._extensions..js (node:internal/modules/cjs/loader:1112:10)
+                    at Object.require.extensions.&lt;computed> [as .ts] (/home/local/CONDUCTOR/caio.maia/Documentos/Testes/protractor-test/alurapic/node_modules/ts-node/src/index.ts:403:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

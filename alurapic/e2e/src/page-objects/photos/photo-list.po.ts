@@ -1,13 +1,16 @@
+import { SimplePage } from '../../shared/simplePage.po';
 import { browser, element, by } from 'protractor';
 
-export class PhotoListPage {
+export class PhotoListPage extends SimplePage {
 
-    navegarParaPhotoList() {
-        return browser.get('/#/user/flavio');
+    navegarParaPhotoList(usuario) {
+        return browser.get(`/#/user/${usuario}`);
     }
 
     buscarImagem(comentario) {
-        return element(by.className('rounded')).sendKeys(comentario);
+        const imagem = element(by.tagName('input')).sendKeys(comentario);
+        this.esperarElemento(imagem);
+        return imagem;
     }
 
     pegarImagem() {
